@@ -1,3 +1,11 @@
+TUNS usage in 2024
+you can use heigh version ruby
+You don't need to rake base32 
+use `sudo gem install base32`(Use sudo because of you need to run as root)
+then run 
+client:`tuns-client -I lib -d <domain>` (use -I because "require" need to find package in $LOAD_PATH ,but over ruby 1.9 ./ not in $LOAD_PATH)
+server `tuns-server -I lib -d <domain>`
+==================================
 TUNS - a simple IP over DNS tunnel
 ==================================
 (c) Lucas Nussbaum <lucas@lucas-nussbaum.net>
